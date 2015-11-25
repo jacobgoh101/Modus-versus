@@ -1455,14 +1455,21 @@ li.comment {
 ---------------------------------------------------------------------------------------------------- */
 
 .footer-widgets {
-	background-color: #333;
+	background-color: #76c7c0;
 	clear: both;
 	padding-top: 40px;
+	text-align: justify;
 }
 
 .footer-widgets,
-.footer-widgets a {
-	color: #aaa;
+.footer-widgets a,
+.footer-widgets h1,
+.footer-widgets h2,
+.footer-widgets h3,
+.footer-widgets h4,
+.footer-widgets h5,
+.footer-widgets h6 {
+	color: #fff;
 }
 
 .footer-widgets input {
@@ -1476,7 +1483,7 @@ li.comment {
 }
 
 .footer-widgets li {
-	border-bottom: 1px dotted #666;
+	/*border-bottom: 1px dotted #666;*/
 	margin-bottom: 10px;
 	padding-bottom: 10px;
 }
@@ -1513,13 +1520,23 @@ li.comment {
 ---------------------------------------------------------------------------------------------------- */
 
 .site-footer {
-	background-color: #fff;
+	background-color: #6ab3ac;
 	font-size: 16px;
 	font-size: 1.6rem;
 	line-height: 1;
 	padding: 40px 0;
 	text-align: center;
+	color: white;
 }
+
+.site-footer a,
+.site-footer a:hover,
+.site-footer a:focus{
+	color: white;
+}
+
+.site-footer a {text-decoration: none;}
+.site-footer a:hover {text-decoration: underline;}
 
 .site-footer p {
 	margin-bottom: 0;

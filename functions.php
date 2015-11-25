@@ -29,3 +29,34 @@ add_theme_support( 'custom-background' );
 
 //* Add support for 3-column footer widgets
 add_theme_support( 'genesis-footer-widgets', 3 );
+
+//enqueues our external font awesome stylesheet
+function enqueue_font_awesome_stylesheets(){
+	wp_enqueue_style('font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'); 
+}
+add_action('wp_enqueue_scripts','enqueue_font_awesome_stylesheets');
+
+//edit content of footer
+remove_action( 'genesis_footer', 'genesis_do_footer' );
+add_action( 'genesis_footer', 'custom_footer' );
+function custom_footer(){
+	?>
+	<style type="text/css">
+	.site-footer i{
+		font-size: 30px;
+		margin: 0 5px;
+	}
+	</style>
+	<div>
+		<span class="alignleft">
+			MODUS Versus &copy;	 <?php echo date('Y'); ?>
+		</span>
+		<span class="alignright">
+			<a href="#"><i class="fa fa-facebook-official"></i></a>
+			<a href="#"><i class="fa fa-twitter"></i></a>
+			<a href="#"><i class="fa fa-google-plus"></i></a>
+			<a href="#"><i class="fa fa-rss"></i></a>
+		</span>
+	</div>
+	<?php
+}
