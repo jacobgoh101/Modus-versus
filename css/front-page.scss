@@ -1,0 +1,197 @@
+@import "bourbon/bourbon";
+@import "neat/neat";
+
+@mixin mv_button($color, $shadow_color){
+  -webkit-border-radius: 10;
+  -moz-border-radius: 10;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 5px 0px $shadow_color;
+  -moz-box-shadow: 0px 5px 0px $shadow_color;
+  box-shadow: 0px 5px 0px $shadow_color;
+  color: #ffffff;
+  background: $color;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+@mixin mv_button_hover($color, $shadow_color){
+  -webkit-border-radius: 10;
+  -moz-border-radius: 10;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 5px 0px lighten($shadow_color,15%);
+  -moz-box-shadow: 0px 5px 0px lighten($shadow_color,15%);
+  box-shadow: 0px 5px 0px lighten($shadow_color,15%);
+  color: #ffffff;
+  background: lighten($color,15%);
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.front-page-slider{
+  background-color: transparent;
+  position: relative;
+  .slider{
+    width: 50%;
+    min-height: 70vh;
+  }
+  .slider-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+#slider1{
+  background: url("http://localhost/modus-versus/wp-content/themes/modus-versus/images/front-page/slider-1.jpg") no-repeat center center fixed;   
+}
+#slider2{
+  background: url("http://localhost/modus-versus/wp-content/themes/modus-versus/images/front-page/slider-2.jpg") no-repeat center center fixed;   
+}
+#slider3{
+  background: url("http://localhost/modus-versus/wp-content/themes/modus-versus/images/front-page/slider-3.jpg") no-repeat center center fixed;   
+}
+@for $i from 1 through 3{
+  #slider#{$i} {
+    background-size:cover;
+  }
+}
+
+.slick-prev  {
+  left: 25px;
+  z-index: 999;
+}
+
+.slick-next  {
+  right: 50px;
+  z-index: 999;
+}
+
+.slick-prev:before,
+.slick-next:before{
+  font-size: 50px;
+}
+
+.slider-heading{
+  text-align: center;
+  h1{
+    color: white;
+    font-weight: 800;
+    padding: 5px 10px;
+    border-radius: 10px;
+    text-align: center;
+    display: inline-block;
+  }
+}
+
+@for $i from 1 through 3{
+  #slider#{$i}-heading h1{
+    background-color: #e2534b;
+  }
+}
+
+.slider-p{
+  background-color: black;
+  padding: 5px 10px;
+  border-radius: 10px;
+  opacity: 0.5;
+  p{
+    color: white;
+    opacity: 1;
+    text-align: justify;
+    margin: 0;
+  }
+}
+
+.top-services{
+  margin: 10px 50px 50px;
+  background-color: #ececec;
+  padding:20px;
+  border-radius:10px;
+  @media only screen and (max-width: 760px) {
+    margin: 10px 50px 50px;
+  }
+
+  #top-services-left,#top-services-right{
+    width: 100%;
+    display: inline-block;
+  }
+  #top-services-left{
+    @include span-columns(8);
+    @media only screen and (max-width: 760px) {
+      @include span-columns(12);
+    }
+    h3{
+      color: #7f8c8c;
+    }
+    p{
+      margin-bottom: 0;
+      text-align: justify;
+      @media only screen and (max-width: 760px) {
+        margin-bottom: 10px;
+      }
+    }
+  }
+  #top-services-right{
+    @include span-columns(4);
+    @media only screen and (max-width: 760px) {
+      @include span-columns(12);
+    }
+    text-align: center;
+    h2{
+      padding:20px 0;
+      a {
+        @include mv_button(#e8645a,#e2534b);
+        
+
+        &:hover, &:focus{
+          @include mv_button_hover(#e8645a,#e2534b);
+          
+        }
+      }
+    }
+  }
+}
+
+.service-column{
+  @include span-columns(3);
+  display: inline-block;
+  @media only screen and (max-width: 820px) {
+    @include span-columns(6);
+    margin-right: 1%;
+    margin-bottom: 50px;
+  }
+  @media only screen and (max-width: 480px) {
+    @include span-columns(12);
+  }
+  text-align: center;
+  background-color: #ececec;
+  -webkit-box-shadow: 0px 5px 0px darken(#ececec,5%);
+  -moz-box-shadow: 0px 5px 0px darken(#ececec,5%);
+  box-shadow: 0px 5px 0px darken(#ececec,5%);
+  border-radius:5px;
+  padding:20px 20px;
+  margin-bottom: 20px;
+  i{
+    font-size: 70px;
+    padding-bottom:10px;
+    color: #76c7c0;
+  }
+  h3{
+    color: #7f8c8c;
+  }
+  h5{
+    a{
+      @include mv_button(#76c7c0,#62b9b0);
+      position:relative;
+      top:30px;
+    }
+  }
+  &:hover{
+    a{
+      @include mv_button(#e8645a,#e2534b);
+    }
+    i{
+      color: #e8645a;
+    }
+  }
+}
