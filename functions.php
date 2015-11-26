@@ -60,3 +60,11 @@ function custom_footer(){
 	</div>
 	<?php
 }
+
+// Register JS Scripts and CSS: Slick
+function register_script_slick()
+{
+    wp_register_script( 'slick', 'https://cdn.jsdelivr.net/jquery.slick/1.5.7/slick.min.js', array( 'jquery' ), null, true);
+    wp_register_style( 'slick-css', 'https://cdn.jsdelivr.net/jquery.slick/1.5.7/slick.css', array(), null, 'all' );
+}
+add_action( 'wp_enqueue_scripts', 'register_script_slick' );
