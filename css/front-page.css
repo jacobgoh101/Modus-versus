@@ -78,7 +78,7 @@ html {
 
 .top-services {
   margin: 10px 50px 50px;
-  background-color: #ececec;
+  background-color: #f9f9f9;
   padding: 20px;
   border-radius: 10px; }
   @media only screen and (max-width: 760px) {
@@ -158,10 +158,10 @@ html {
   width: 23.23176%;
   display: inline-block;
   text-align: center;
-  background-color: #ececec;
-  -webkit-box-shadow: 0px 5px 0px #dfdfdf;
-  -moz-box-shadow: 0px 5px 0px #dfdfdf;
-  box-shadow: 0px 5px 0px #dfdfdf;
+  background-color: #f9f9f9;
+  -webkit-box-shadow: 0px 5px 0px #ececec;
+  -moz-box-shadow: 0px 5px 0px #ececec;
+  box-shadow: 0px 5px 0px #ececec;
   border-radius: 5px;
   padding: 20px 20px;
   margin-bottom: 20px; }
@@ -217,5 +217,47 @@ html {
     text-decoration: none; }
   .service-column:hover i {
     color: #e8645a; }
+
+.about-why {
+  margin-top: 100px;
+  text-align: center; }
+  .about-why h1 {
+    color: #e8645a; }
+
+.about-more {
+  margin: 50px 20px 0;
+  text-align: justify; }
+  .about-more .about-more-testimonial {
+    text-align: center;
+    margin-top: 20px; }
+    .about-more .about-more-testimonial h3, .about-more .about-more-testimonial h4 {
+      color: #7f8c8c; }
+    .about-more .about-more-testimonial blockquote {
+      margin: 20px; }
+      .about-more .about-more-testimonial blockquote:before {
+        content: none; }
+    .about-more .about-more-testimonial h4, .about-more .about-more-testimonial p {
+      display: inline-block; }
+  .about-more .about-more-bottom {
+    margin-top: 50px;
+    text-align: center; }
+    .about-more .about-more-bottom .about-more-bottom-skill {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 23.23176%; }
+      .about-more .about-more-bottom .about-more-bottom-skill:last-child {
+        margin-right: 0; }
+      @media only screen and (max-width: 640px) {
+        .about-more .about-more-bottom .about-more-bottom-skill {
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 48.82117%;
+          margin-right: 1%; }
+          .about-more .about-more-bottom .about-more-bottom-skill:last-child {
+            margin-right: 0; } }
+      .about-more .about-more-bottom .about-more-bottom-skill h5, .about-more .about-more-bottom .about-more-bottom-skill h2 {
+        color: #7f8c8c; }
 
 /*# sourceMappingURL=front-page.css.map */

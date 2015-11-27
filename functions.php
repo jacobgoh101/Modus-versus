@@ -68,3 +68,19 @@ function register_script_slick()
     wp_register_style( 'slick-css', 'https://cdn.jsdelivr.net/jquery.slick/1.5.7/slick.css', array(), null, 'all' );
 }
 add_action( 'wp_enqueue_scripts', 'register_script_slick' );
+
+// Register JS Scripts: GSAP, ScrollMagic.js
+function register_script_gsap_scrollmagic()
+{
+	//GSAP
+    wp_register_script( 'gsap-css', 'http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/CSSPlugin.min.js' );
+    wp_register_script( 'gsap-ease', 'http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/easing/EasePack.min.js' );
+    wp_register_script( 'gsap-tweenlite', 'http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenLite.min.js' );
+    wp_register_script( 'gsap-timelinelite', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineLite.min.js' );
+
+    // ScrollMagic.js
+    wp_register_script( 'scrollmagic-main', 'http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js' );
+    wp_register_script( 'scrollmagic-gsap', 'https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.js' );
+    wp_register_script( 'scrollmagic-debug', 'https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/debug.addIndicators.js' );
+}
+add_action( 'wp_enqueue_scripts', 'register_script_gsap_scrollmagic' );

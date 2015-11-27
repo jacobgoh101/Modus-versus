@@ -104,7 +104,7 @@
 
 .top-services{
   margin: 10px 50px 50px;
-  background-color: #ececec;
+  background-color: #f9f9f9;
   padding:20px;
   border-radius:10px;
   @media only screen and (max-width: 760px) {
@@ -164,10 +164,10 @@
     @include span-columns(12);
   }
   text-align: center;
-  background-color: #ececec;
-  -webkit-box-shadow: 0px 5px 0px darken(#ececec,5%);
-  -moz-box-shadow: 0px 5px 0px darken(#ececec,5%);
-  box-shadow: 0px 5px 0px darken(#ececec,5%);
+  background-color: #f9f9f9;
+  -webkit-box-shadow: 0px 5px 0px darken(#f9f9f9,5%);
+  -moz-box-shadow: 0px 5px 0px darken(#f9f9f9,5%);
+  box-shadow: 0px 5px 0px darken(#f9f9f9,5%);
   border-radius:5px;
   padding:20px 20px;
   margin-bottom: 20px;
@@ -192,6 +192,50 @@
     }
     i{
       color: #e8645a;
+    }
+  }
+}
+
+.about-why{
+  margin-top: 100px;
+  text-align: center;
+  h1{
+    color: #e8645a;
+  }
+}
+
+.about-more{
+  margin: 50px 20px 0;
+  text-align: justify;
+  .about-more-testimonial{
+    text-align: center;
+    margin-top: 20px;
+    h3,h4{
+      color: #7f8c8c;
+    }
+    blockquote{
+      margin: 20px;
+      &:before{
+        content: none;
+      }
+    }
+    h4,p{
+      display: inline-block;
+    }
+  }
+
+  .about-more-bottom{
+    margin-top: 50px;
+    text-align: center;
+    .about-more-bottom-skill{
+      @include span-columns(3);
+      @media only screen and (max-width: 640px){
+        @include span-columns(6);
+        margin-right:1%;
+      }
+      h5,h2{
+        color: #7f8c8c;
+      }
     }
   }
 }

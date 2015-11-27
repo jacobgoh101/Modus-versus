@@ -107,6 +107,39 @@ function front_page_html(){
 		</div>
 	</div>
 	<!-- END Services Section -->
+
+	<!-- About Section -->
+	<div class="about-why">
+		<h1>Why MODUS Versus</h1>
+		<p>Scio enim esse quosdam, qui quavis lingua philosophari possint; Negat enim summo bono afferre incrementum diem. </p>
+		<img src="http://localhost/modus-versus/wp-content/themes/modus-versus/images/front-page/why_choose_modus_versus.jpg" alt="why_choose_modus_versus">
+	</div>
+	<div class="about-more">
+			<div class="about-more-testimonial">
+				<h3>What Clients say</h3>
+				<blockquote>At hoc in eo M. Sin aliud quid voles, postea. Quorum sine causa fieri nihil putandum est. Equidem, sed audistine modo de Carneade? Urgent tamen et nihil remittunt.</blockquote>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;</p><h4>John Doe</h4>
+			</div>
+		<div class="about-more-bottom">
+			<div class="about-more-bottom-skill">
+				<h2><span class="js-counter">50</span></h2>
+				<h5>SUSPEISSE</h5>
+			</div>
+			<div class="about-more-bottom-skill">
+				<h2><span class="js-counter">70</span></h2>
+				<h5>MAECENAS</h5>
+			</div>
+			<div class="about-more-bottom-skill">
+				<h2><span class="js-counter">80</span></h2>
+				<h5>ALIQUAM</h5>
+			</div>
+			<div class="about-more-bottom-skill">
+				<h2><span class="js-counter">100</span></h2>
+				<h5>HABITASSE</h5>
+			</div>
+		</div>
+	</div>
+	<!-- END About Section -->
 	<?php
 }
 genesis();
