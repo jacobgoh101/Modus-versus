@@ -8,22 +8,30 @@ html {
   background-color: transparent;
   position: relative; }
   .front-page-slider .slider {
-    width: 50%;
     min-height: 70vh; }
   .front-page-slider .slider-text {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); }
+  .front-page-slider .slick-prev {
+    left: 25px;
+    z-index: 999; }
+  .front-page-slider .slick-next {
+    right: 50px;
+    z-index: 999; }
+  .front-page-slider .slick-prev:before,
+  .front-page-slider .slick-next:before {
+    font-size: 50px; }
 
 #slider1 {
-  background: url("http://localhost/modus-versus/wp-content/themes/modus-versus/images/front-page/slider-1.jpg") no-repeat center center fixed; }
+  background: url("http://localhost/modus-versus/wp-content/themes/modus-versus/images/front-page/slider-1.jpg") no-repeat center center; }
 
 #slider2 {
-  background: url("http://localhost/modus-versus/wp-content/themes/modus-versus/images/front-page/slider-2.jpg") no-repeat center center fixed; }
+  background: url("http://localhost/modus-versus/wp-content/themes/modus-versus/images/front-page/slider-2.jpg") no-repeat center center; }
 
 #slider3 {
-  background: url("http://localhost/modus-versus/wp-content/themes/modus-versus/images/front-page/slider-3.jpg") no-repeat center center fixed; }
+  background: url("http://localhost/modus-versus/wp-content/themes/modus-versus/images/front-page/slider-3.jpg") no-repeat center center; }
 
 #slider1 {
   background-size: cover; }
@@ -33,18 +41,6 @@ html {
 
 #slider3 {
   background-size: cover; }
-
-.slick-prev {
-  left: 25px;
-  z-index: 999; }
-
-.slick-next {
-  right: 50px;
-  z-index: 999; }
-
-.slick-prev:before,
-.slick-next:before {
-  font-size: 50px; }
 
 .slider-heading {
   text-align: center; }
@@ -259,5 +255,90 @@ html {
             margin-right: 0; } }
       .about-more .about-more-bottom .about-more-bottom-skill h5, .about-more .about-more-bottom .about-more-bottom-skill h2 {
         color: #7f8c8c; }
+
+#our-client {
+  text-align: center;
+  color: #7f8c8c;
+  margin-top: 200px; }
+  @media only screen and (max-width: 640px) {
+    #our-client {
+      margin-top: 300px; } }
+
+.our-client {
+  width: 80%;
+  clear: both;
+  margin: 20px auto; }
+  .our-client #our-client-logo-1 {
+    background: transparent url("http://localhost/modus-versus/wp-content/themes/modus-versus/images/front-page/fake-logo/1.png") no-repeat center center;
+    background-size: contain;
+    width: 200px;
+    height: 200px; }
+    @media only screen and (max-width: 760px) {
+      .our-client #our-client-logo-1 {
+        background-size: contain; } }
+  .our-client #our-client-logo-2 {
+    background: transparent url("http://localhost/modus-versus/wp-content/themes/modus-versus/images/front-page/fake-logo/2.png") no-repeat center center;
+    background-size: contain;
+    width: 200px;
+    height: 200px; }
+    @media only screen and (max-width: 760px) {
+      .our-client #our-client-logo-2 {
+        background-size: contain; } }
+  .our-client #our-client-logo-3 {
+    background: transparent url("http://localhost/modus-versus/wp-content/themes/modus-versus/images/front-page/fake-logo/3.png") no-repeat center center;
+    background-size: contain;
+    width: 200px;
+    height: 200px; }
+    @media only screen and (max-width: 760px) {
+      .our-client #our-client-logo-3 {
+        background-size: contain; } }
+  .our-client #our-client-logo-4 {
+    background: transparent url("http://localhost/modus-versus/wp-content/themes/modus-versus/images/front-page/fake-logo/4.png") no-repeat center center;
+    background-size: contain;
+    width: 200px;
+    height: 200px; }
+    @media only screen and (max-width: 760px) {
+      .our-client #our-client-logo-4 {
+        background-size: contain; } }
+  .our-client #our-client-logo-5 {
+    background: transparent url("http://localhost/modus-versus/wp-content/themes/modus-versus/images/front-page/fake-logo/5.png") no-repeat center center;
+    background-size: contain;
+    width: 200px;
+    height: 200px; }
+    @media only screen and (max-width: 760px) {
+      .our-client #our-client-logo-5 {
+        background-size: contain; } }
+  .our-client #our-client-logo-6 {
+    background: transparent url("http://localhost/modus-versus/wp-content/themes/modus-versus/images/front-page/fake-logo/6.png") no-repeat center center;
+    background-size: contain;
+    width: 200px;
+    height: 200px; }
+    @media only screen and (max-width: 760px) {
+      .our-client #our-client-logo-6 {
+        background-size: contain; } }
+  .our-client #our-client-logo-7 {
+    background: transparent url("http://localhost/modus-versus/wp-content/themes/modus-versus/images/front-page/fake-logo/7.png") no-repeat center center;
+    background-size: contain;
+    width: 200px;
+    height: 200px; }
+    @media only screen and (max-width: 760px) {
+      .our-client #our-client-logo-7 {
+        background-size: contain; } }
+  .our-client #our-client-logo-8 {
+    background: transparent url("http://localhost/modus-versus/wp-content/themes/modus-versus/images/front-page/fake-logo/8.png") no-repeat center center;
+    background-size: contain;
+    width: 200px;
+    height: 200px; }
+    @media only screen and (max-width: 760px) {
+      .our-client #our-client-logo-8 {
+        background-size: contain; } }
+  .our-client .slick-prev:before, .our-client .slick-next:before {
+    color: #e2534b;
+    opacity: 1;
+    font-size: 30px; }
+  .our-client .slick-prev:hover, .our-client .slick-next:hover {
+    opacity: 0.75; }
+  .our-client .slick-prev {
+    left: -35px; }
 
 /*# sourceMappingURL=front-page.css.map */
