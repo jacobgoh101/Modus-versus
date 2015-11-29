@@ -41,6 +41,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 - Site Header
 	- Title Area
 	- Widget Area
+  - mv_page_title
 - Site Navigation
 	- Accessible Menu
 	- Site Header Navigation
@@ -284,10 +285,10 @@ textarea:focus, .button, .gallery img {
   transition: all 0.1s ease-in-out; }
 
 a {
-  color: #c3251d;
+  color: #e8645a;
   text-decoration: underline; }
   a:hover, a:focus {
-    color: #333;
+    color: #e54f44;
     text-decoration: none; }
 
 p {
@@ -329,7 +330,7 @@ blockquote {
 /* ## Headings
 --------------------------------------------- */
 h1, h2, h3, h4, h5, h6 {
-  color: #333;
+  color: #62b9b0;
   font-family: Lato, sans-serif;
   font-weight: 400;
   line-height: 1.2;
@@ -442,7 +443,7 @@ input[type="checkbox"], input[type="image"], input[type="radio"] {
   font-weight: 300; }
 
 button {
-  background-color: #333;
+  background-color: #90d1cb;
   border: 0;
   color: #fff;
   cursor: pointer;
@@ -454,7 +455,7 @@ button {
   width: auto; }
 
 input[type="button"], input[type="reset"], input[type="submit"] {
-  background-color: #333;
+  background-color: #90d1cb;
   border: 0;
   color: #fff;
   cursor: pointer;
@@ -478,36 +479,36 @@ input[type="button"], input[type="reset"], input[type="submit"] {
   width: auto; }
 
 button:hover {
-  background-color: #c3251d;
+  background-color: #e8645a;
   color: #fff; }
 
 input:hover[type="button"], input:hover[type="reset"], input:hover[type="submit"] {
-  background-color: #c3251d;
+  background-color: #e8645a;
   color: #fff; }
 
 .button:hover, button:focus {
-  background-color: #c3251d;
+  background-color: #e8645a;
   color: #fff; }
 
 input:focus[type="button"], input:focus[type="reset"], input:focus[type="submit"] {
-  background-color: #c3251d;
+  background-color: #e8645a;
   color: #fff; }
 
 .button:focus {
-  background-color: #c3251d;
+  background-color: #e8645a;
   color: #fff; }
 
 .entry-content .button:hover, .entry-content .button:focus {
   color: #fff; }
 
 .footer-widgets button {
-  background-color: #c3251d;
+  background-color: #e8645a;
   color: #fff; }
 .footer-widgets input[type="button"], .footer-widgets input[type="reset"], .footer-widgets input[type="submit"] {
-  background-color: #c3251d;
+  background-color: #e8645a;
   color: #fff; }
 .footer-widgets .button {
-  background-color: #c3251d;
+  background-color: #e8645a;
   color: #fff; }
 .footer-widgets button:hover {
   background-color: #fff;
@@ -749,13 +750,13 @@ th {
   font-size: 36px;
   font-size: 3.6rem; }
   .entry-title a {
-    color: #333; }
+    color: #62b9b0; }
 
 .sidebar .widget-title a {
   color: #333; }
 
 .entry-title a:hover, .entry-title a:focus {
-  color: #c3251d; }
+  color: #e8645a; }
 
 .widget-title {
   font-size: 18px;
@@ -862,7 +863,7 @@ a.alignright, img.alignright, .wp-caption.alignright {
   .enews-widget input:focus {
     border: 1px solid #333; }
   .enews-widget input[type="submit"] {
-    background-color: #c3251d;
+    background-color: #e8645a;
     color: #fff;
     margin: 0;
     width: 100%; }
@@ -950,6 +951,17 @@ a.alignright, img.alignright, .wp-caption.alignright {
   width: 800px;
   margin-top: 20px; }
 
+/* ## mv_page_title
+--------------------------------------------- */
+.mv-page-title {
+  width: 100%;
+  max-height: 80px;
+  background-color: #ececec; }
+  .mv-page-title h2 {
+    padding: 20px 0;
+    padding-left: 50px;
+    color: #7f8c8c; }
+
 /* # Site Navigation
 ---------------------------------------------------------------------------------------------------- */
 .genesis-nav-menu {
@@ -1000,7 +1012,7 @@ a.alignright, img.alignright, .wp-caption.alignright {
     width: 200px;
     z-index: 99; }
     .genesis-nav-menu .sub-menu .current-menu-item > a:hover, .genesis-nav-menu .sub-menu .current-menu-item > a:focus {
-      color: #c3251d;
+      color: #e8645a;
       text-decoration: underline; }
     .genesis-nav-menu .sub-menu a {
       background-color: #fff;
@@ -1074,10 +1086,10 @@ a.alignright, img.alignright, .wp-caption.alignright {
   .nav-primary .genesis-nav-menu .sub-menu a {
     color: #333; }
     .nav-primary .genesis-nav-menu .sub-menu a:hover, .nav-primary .genesis-nav-menu .sub-menu a:focus {
-      color: #c3251d;
+      color: #e8645a;
       text-decoration: underline; }
   .nav-primary .genesis-nav-menu .sub-menu .current-menu-item > a {
-    color: #c3251d;
+    color: #e8645a;
     text-decoration: underline; }
 
 /* ## Secondary Navigation
@@ -1142,7 +1154,7 @@ p.entry-meta {
 .archive-pagination li {
   display: inline; }
   .archive-pagination li a {
-    background-color: #333;
+    background-color: #90d1cb;
     color: #fff;
     cursor: pointer;
     display: inline-block;
@@ -1151,10 +1163,10 @@ p.entry-meta {
     padding: 8px 12px;
     text-decoration: none; }
     .archive-pagination li a:hover, .archive-pagination li a:focus {
-      background-color: #c3251d;
+      background-color: #e8645a;
       text-decoration: underline; }
 .archive-pagination .active a {
-  background-color: #c3251d;
+  background-color: #e8645a;
   text-decoration: underline; }
 
 /* ## Comments
@@ -1219,7 +1231,6 @@ li.comment {
     margin-bottom: 0; }
   .sidebar .widget {
     background-color: #fff;
-    margin-bottom: 40px;
     padding: 40px; }
 
 /* # Footer Widgets
@@ -1238,7 +1249,6 @@ li.comment {
   .footer-widgets a.button, .footer-widgets a:hover, .footer-widgets a:focus {
     color: #e2534b; }
   .footer-widgets li {
-    border-bottom: 1px dotted #666;
     margin-bottom: 10px;
     padding-bottom: 10px; }
   .footer-widgets .widget {

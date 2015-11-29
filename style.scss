@@ -55,6 +55,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 - Site Header
 	- Title Area
 	- Widget Area
+  - mv_page_title
 - Site Navigation
 	- Accessible Menu
 	- Site Header Navigation
@@ -365,10 +366,10 @@ textarea:focus, .button, .gallery img {
 }
 
 a {
-  color: #c3251d;
+  color: #e8645a;
   text-decoration: underline;
   &:hover, &:focus {
-    color: #333;
+    color: darken(#e8645a,5%);
     text-decoration: none;
   }
 }
@@ -421,7 +422,7 @@ blockquote {
 --------------------------------------------- */
 
 h1, h2, h3, h4, h5, h6 {
-  color: #333;
+  color: #62b9b0;
   font-family: Lato, sans-serif;
   font-weight: 400;
   line-height: 1.2;
@@ -567,7 +568,7 @@ input {
 }
 
 button {
-  background-color: #333;
+  background-color: #90d1cb;
   border: 0;
   color: #fff;
   cursor: pointer;
@@ -581,7 +582,7 @@ button {
 
 input {
   &[type="button"], &[type="reset"], &[type="submit"] {
-    background-color: #333;
+    background-color: #90d1cb;
     border: 0;
     color: #fff;
     cursor: pointer;
@@ -608,31 +609,31 @@ input {
 }
 
 button:hover {
-  background-color: #c3251d;
+  background-color: #e8645a;
   color: #fff;
 }
 
 input:hover {
   &[type="button"], &[type="reset"], &[type="submit"] {
-    background-color: #c3251d;
+    background-color: #e8645a;
     color: #fff;
   }
 }
 
 .button:hover, button:focus {
-  background-color: #c3251d;
+  background-color: #e8645a;
   color: #fff;
 }
 
 input:focus {
   &[type="button"], &[type="reset"], &[type="submit"] {
-    background-color: #c3251d;
+    background-color: #e8645a;
     color: #fff;
   }
 }
 
 .button:focus {
-  background-color: #c3251d;
+  background-color: #e8645a;
   color: #fff;
 }
 
@@ -644,17 +645,17 @@ input:focus {
 
 .footer-widgets {
   button {
-    background-color: #c3251d;
+    background-color: #e8645a;
     color: #fff;
   }
   input {
     &[type="button"], &[type="reset"], &[type="submit"] {
-      background-color: #c3251d;
+      background-color: #e8645a;
       color: #fff;
     }
   }
   .button {
-    background-color: #c3251d;
+    background-color: #e8645a;
     color: #fff;
   }
   button:hover {
@@ -971,7 +972,7 @@ th {
   font-size: 36px;
   font-size: 3.6rem;
   a {
-    color: #333;
+    color: #62b9b0;
   }
 }
 
@@ -981,7 +982,7 @@ th {
 
 .entry-title a {
   &:hover, &:focus {
-    color: #c3251d;
+    color: #e8645a;
   }
 }
 
@@ -1131,7 +1132,7 @@ a.alignright, img.alignright, .wp-caption.alignright {
   font-size: 1.6rem;
   margin-bottom: 16px;
   &[type="submit"] {
-    background-color: #c3251d;
+    background-color: #e8645a;
     color: #fff;
     margin: 0;
     width: 100%;
@@ -1249,6 +1250,19 @@ a.alignright, img.alignright, .wp-caption.alignright {
   margin-top: 20px;
 }
 
+/* ## mv_page_title
+--------------------------------------------- */
+.mv-page-title{
+  width: 100%;
+  max-height:80px;
+  background-color: #ececec;
+  h2{
+    padding: 20px 0;
+    padding-left:50px;
+    color: #7f8c8c;
+  }
+}
+
 /* # Site Navigation
 ---------------------------------------------------------------------------------------------------- */
 
@@ -1277,7 +1291,7 @@ a.alignright, img.alignright, .wp-caption.alignright {
   .sub-menu {
     .current-menu-item > a {
       &:hover, &:focus {
-        color: #c3251d;
+        color: #e8645a;
         text-decoration: underline;
       }
     }
@@ -1403,12 +1417,12 @@ a.alignright, img.alignright, .wp-caption.alignright {
       a {
         color: #333;
         &:hover, &:focus {
-          color: #c3251d;
+          color: #e8645a;
           text-decoration: underline;
         }
       }
       .current-menu-item > a {
-        color: #c3251d;
+        color: #e8645a;
         text-decoration: underline;
       }
     }
@@ -1500,7 +1514,7 @@ p.entry-meta {
   li {
     display: inline;
     a {
-      background-color: #333;
+      background-color: #90d1cb;
       color: #fff;
       cursor: pointer;
       display: inline-block;
@@ -1509,13 +1523,13 @@ p.entry-meta {
       padding: 8px 12px;
       text-decoration: none;
       &:hover, &:focus {
-        background-color: #c3251d;
+        background-color: #e8645a;
         text-decoration: underline;
       }
     }
   }
   .active a {
-    background-color: #c3251d;
+    background-color: #e8645a;
     text-decoration: underline;
   }
 }
@@ -1605,7 +1619,7 @@ li.comment {
   }
   .widget {
     background-color: #fff;
-    margin-bottom: 40px;
+    //margin-bottom: 40px;
     padding: 40px;
   }
 }
@@ -1633,7 +1647,7 @@ li.comment {
     }
   }
   li {
-    border-bottom: 1px dotted #666;
+    //border-bottom: 1px dotted #666;
     margin-bottom: 10px;
     padding-bottom: 10px;
   }

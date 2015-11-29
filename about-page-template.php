@@ -1,8 +1,8 @@
 <?php
-//*front-page.php
+//* Template Name: About Page
 
-//remove genesis loop
-remove_action( 'genesis_loop', 'genesis_do_loop' );
+//* Force full-width-content layout setting
+add_filter( 'genesis_pre_get_option_site_layout', '__genesis_return_full_width_content' );
 
 //enqueue Slick
 function enqueue_script_slick(){
@@ -36,50 +36,22 @@ add_action( 'wp_enqueue_scripts', 'enqueue_front_page_script' );
 add_action('genesis_after_header','front_page_html');
 function front_page_html(){
 	?>
-	<!-- Slider -->
-	<div class="front-page-slider">
-		<div class="slider" id="slider1">
-			<div class="slider-text">
-				<div class="slider-heading" id="slider1-heading">
-					<h1>VESTIBULUM</h1>
-				</div>
-				<div class="slider-p">
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-				</div>
-			</div>
-		</div>
-		<div class="slider" id="slider2">
-			<div class="slider-text">
-				<div class="slider-heading" id="slider2-heading">
-					<h1>Quam tu ponis</h1>
-				</div>
-				<div class="slider-p">
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-				</div>
-			</div>
-		</div>
-		<div class="slider" id="slider3">
-			<div class="slider-text">
-				<div class="slider-heading" id="slider3-heading">
-					<h1>Negare non possum</h1>
-				</div>
-				<div class="slider-p">
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-				</div>
-			</div>
-		</div>
+	<style type="text/css">
+		.content {
+			display: none;
+		}
+	</style>
+	
+
+	<!-- About Section -->
+	<div class="about-why">
+		<h1>Why MODUS Versus</h1>
+		<p>Scio enim esse quosdam, qui quavis lingua philosophari possint; Negat enim summo bono afferre incrementum diem. </p>
+		<img src="http://localhost/modus-versus/wp-content/themes/modus-versus/images/front-page/why_choose_modus_versus.jpg" alt="why_choose_modus_versus">
 	</div>
-	<!-- END Slider -->
 
 	<!-- Services Section -->
-	<div class="top-services wrap">
-		<div id="top-services-left">
-			<h3>Some of our Top Services</h3>
-			<p>Ex eorum enim scriptis et institutis cum omnis doctrina liberalis, omnis historia. Vide, ne etiam menses! nisi forte eum dicis, qui, simul atque arripuit, interficit. </p>
-		</div>
-		<div id="top-services-right"><h2><a href="#">View More</a></h2></div>
-	</div>
-
+	<br/><br/>
 	<div class="wrap">
 		<div class="service-column">
 			<i class="fa fa-thumbs-o-up"></i>
@@ -108,12 +80,6 @@ function front_page_html(){
 	</div>
 	<!-- END Services Section -->
 
-	<!-- About Section -->
-	<div class="about-why">
-		<h1>Why MODUS Versus</h1>
-		<p>Scio enim esse quosdam, qui quavis lingua philosophari possint; Negat enim summo bono afferre incrementum diem. </p>
-		<img src="http://localhost/modus-versus/wp-content/themes/modus-versus/images/front-page/why_choose_modus_versus.jpg" alt="why_choose_modus_versus">
-	</div>
 	<div class="about-more">
 			<div class="about-more-testimonial">
 				<h3>What Clients say</h3>
@@ -140,6 +106,8 @@ function front_page_html(){
 		</div>
 	</div>
 	<!-- END About Section -->
+
+
 	<!-- Out Client Section -->
 	<h1 id="our-client">Our Happy Clients</h1>
 	<div class="our-client">
