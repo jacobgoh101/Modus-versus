@@ -1,16 +1,10 @@
-# Genesis Sample Theme
+Modus Versus
 
-Github project link: https://github.com/copyblogger/genesis-sample
+Built based on the free web design template
+http://www.webdesignerdepot.com/2013/06/free-psd-template-modus-versus/
 
-
-## Installation Instructions
-
-1. Upload the Genesis Sample theme folder via FTP to your wp-content/themes/ directory. (The Genesis parent theme needs to be in the wp-content/themes/ directory as well.)
-2. Go to your WordPress dashboard and select Appearance.
-3. Activate the Genesis Sample theme.
-4. Inside your WordPress dashboard, go to Genesis > Theme Settings and configure them to your liking.
-
-
-## Theme Support
-
-Please visit http://my.studiopress.com/help/ for theme support.
+Using:
+Genesis Framework - Genesis Sample Child Theme (http://my.studiopress.com/themes/genesis/)
+Sass 
+Slick carousel jquery plugin (https://kenwheeler.github.io/slick/)
+Font Awesome
